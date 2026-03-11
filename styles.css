@@ -144,16 +144,16 @@ body::before {
 }
 
 .hero h1 {
-  max-width: 24ch;
+  max-width: none;
   margin: 0 auto;
-  font-size: clamp(1.35rem, 2.35vw, 2rem);
-  line-height: 1.12;
+  font-size: clamp(1.15rem, 1.85vw, 1.75rem);
+  line-height: 1.16;
   text-align: center;
-  text-wrap: balance;
 }
 
 .hero h1 span {
   display: block;
+  white-space: nowrap;
 }
 
 .hero-code {
@@ -392,7 +392,11 @@ body::before {
   }
 
   .hero h1 {
-    max-width: none;
+    max-width: 16ch;
+  }
+
+  .hero h1 span {
+    white-space: normal;
   }
 
   .site-nav {
