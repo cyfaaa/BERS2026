@@ -108,6 +108,18 @@ body::before {
   padding: 64px 48px 40px;
   margin-bottom: 24px;
   text-align: center;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(250, 252, 255, 0.88), rgba(250, 252, 255, 0.92)),
+    url("assets/bers-hero-background.svg") center/cover no-repeat;
+  opacity: 0.92;
+  z-index: -1;
 }
 
 .hero::after,
