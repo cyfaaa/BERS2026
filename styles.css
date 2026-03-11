@@ -116,9 +116,10 @@ body::before {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(250, 252, 255, 0.88), rgba(250, 252, 255, 0.92)),
-    url("assets/bers-hero-background.svg") center/cover no-repeat;
-  opacity: 0.92;
+    linear-gradient(135deg, rgba(245, 248, 255, 0.9), rgba(244, 247, 253, 0.94)),
+    url("assets/hero-network-bg.jpeg") center/cover no-repeat;
+  background-position: center center;
+  opacity: 0.96;
   z-index: -1;
 }
 
@@ -360,6 +361,29 @@ body::before {
 .organizer-grid a {
   color: var(--accent);
   font-weight: 700;
+}
+
+.support-block {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.support-logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 28px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(24, 33, 45, 0.08);
+  border-radius: 22px;
+}
+
+.support-logo {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
 }
 
 .contact-card {
